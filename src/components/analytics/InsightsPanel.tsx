@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
-import { TrendingDown, AlertCircle, Droplets, MapPin } from "lucide-react";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts";
+import { MapPin } from "lucide-react";
 import type { VillageData } from "../../utils/dataSimulator";
 
-const InsightsPanel: React.FC<{ village: VillageData | null, nationalVillages: VillageData[] }> = ({ village, nationalVillages }) => {
+const InsightsPanel: React.FC<{ village: VillageData | null, nationalVillages: VillageData[] }> = ({ village }) => {
   const chartData = useMemo(() => {
     if (!village) return [];
     return village.historicalTrend.map((v, i) => ({ name: `M${i}`, value: v }));

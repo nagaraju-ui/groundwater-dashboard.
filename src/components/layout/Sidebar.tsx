@@ -1,5 +1,5 @@
-﻿import React from "react";
-import { Map, BarChart3, AlertTriangle, Settings, User } from "lucide-react";
+import React from "react";
+import { Map, BarChart3, AlertTriangle, Settings } from "lucide-react";
 const Sidebar: React.FC<{ activeTab: string, onTabChange: (t: any) => void }> = ({ activeTab, onTabChange }) => (
   <aside className="fixed left-0 top-0 bottom-0 w-[72px] bg-[#020617] border-r border-white/5 flex flex-col items-center py-8 z-[100]">
     <div className="w-10 h-10 rounded-xl bg-cyan-400/10 flex items-center justify-center mb-12 border border-cyan-400/20">

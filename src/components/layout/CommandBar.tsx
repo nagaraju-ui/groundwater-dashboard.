@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, MapPin, Layers, Crosshair } from "lucide-react";
+import { Search, Crosshair } from "lucide-react";
 const CommandBar: React.FC<{ onSearch: (v: string) => void, onNearMe: () => void, viewMode: string, onViewModeChange: (v: any) => void }> = ({ onSearch, onNearMe, viewMode, onViewModeChange }) => (
   <div className="absolute top-24 left-1/2 -translate-x-1/2 z-[1000] w-[600px]">
     <div className="bg-[#020617]/80 backdrop-blur-2xl border border-white/10 rounded-3xl p-2 shadow-2xl flex items-center gap-2">
